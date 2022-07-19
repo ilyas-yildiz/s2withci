@@ -9,16 +9,21 @@ jquery: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.
 
 2- We include the cdns we got from select2.org in our view file. jquery this should come before the js file below.
 
-css: <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+css: https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css
 
-js: <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+js: https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js
 
 3- We add the js code snippet that will run select2 before the body tag is closed.
 <script>
+
     $(document).ready(function() {
+
         $('.js-example-basic-single').select2();
+
     });
+
 </script>
+
 
 4- We create a select whose class is js-example-basic-single.
 
